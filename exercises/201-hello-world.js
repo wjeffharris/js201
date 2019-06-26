@@ -2,7 +2,11 @@
 // string that says hello to the name.
 // Example: hello('Mustache') should return 'Hello, Mustache!'
 
-
+function hello(name){
+    
+    return 'hello' + name
+    
+}
 
 // ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 // Write a function "helloDefault" such that if no name is given it will return
