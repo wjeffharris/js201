@@ -21,12 +21,31 @@
 // isVowel(99) --> false
 // isVowel({e: 'Elephant'}) --> false
 
+// function isVowel(char){
+//     if(typeof char !== 'string') return false
+//     if(char.length !==1) return false
+
+//     const vowels = ['a','e','i','o','u']
+//     const lowercasechar = char.toLowerCase()
+//     return vowels.includes(lowercasechar)
+// }
+
 function isVowel(char){
-    if(char ){
-        return true
-    }else (char )
-        return false
+    return typeof char === 'string' &&
+        char.length ===1 &&
+         'aeiou'.indexOf(char.toLowerCase()) !== -1
 }
+
+// function isVowel(v){
+//     if (v === 'c') {
+//         return false
+
+//     } else if (v === 'e'){
+//         return ture
+
+//     } else if
+
+// }
 
     
 
@@ -44,8 +63,18 @@ function isVowel(char){
 // isOdd('7') --> false
 // isOdd(3.14) --> false
 
+    function isInteger(){
+        return typeof n === 'number' &&
+            n % 1 ===0
+    }
+    function isOdd(){
+       return isInteger(n) &&
+            n % 2 !==0
 
-
+    function isEven(){
+        return isInteger(n) &&
+            n % 2 ===0
+    }
 // ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 // Write a function "isCapitalCity" that takes two arguments: a US state and a city name
 // and returns true or false if the city name is the capital of the state.
