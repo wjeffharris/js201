@@ -89,3 +89,4 @@ function isVowel(char){
 // isCapitalCity('Texas', 'Houston') --> false
 // isCapitalCity('Alaska', 'Juneau') --> true
 // isCapitalCity('Strawberry', 'Mango') --> false
+
