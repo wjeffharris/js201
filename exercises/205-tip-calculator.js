@@ -9,8 +9,24 @@
 // Examples:
 // tipAmount(100, 'good') --> 20
 // tipAmount(40, 'fair') --> 6
+// *you can use switch-case statement
+function tipAmount(bill, serviceLvl){
+    // if(serviceLvl === good){
+    //     return bill*.20
+    // }else if(serviceLvl === fair){
+    //     return bill*.15
 
+    // }else(serviceLvl === poor)
+    // return bill*.10
 
+    var Level ={
+        good : .20,
+        fair : .15,
+        poor : .10,
+    }
+
+    return bill*(Level[serviceLvl])
+}
 
 // ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 // Write a function "totalAmount" that takes the same arguments as "tipAmount"
@@ -21,7 +37,16 @@
 // totalAmount(100, 'good') --> 120
 // totalAmount(40, 'fair') --> 46
 
+function totalAmount(bill,serviceLvl){
 
+    var Level ={
+        good : .20,
+        fair : .15,
+        poor : .10,
+    }
+
+    return bill*(Level[serviceLvl]) + bill 
+}
 
 // ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 // Write a function "splitAmount" that takes a bill amount, the level of service,
@@ -31,3 +56,13 @@
 // Examples:
 // splitAmount(100, 'good', 5) --> 24
 // splitAmount(40, 'fair', 2) --> 23
+function splitAmount(bill, serviceLvl,people){
+
+    var Level ={
+        good : .20,
+        fair : .15,
+        poor : .10,
+    }
+
+    return (bill*(Level[serviceLvl])+bill)/people
+}

@@ -5,7 +5,7 @@
 
 function hello(name){
     
-    return 'hello' + name
+    return 'Hello, ' + name + '!'
     
 }
 
@@ -14,8 +14,9 @@ function hello(name){
 // Write a function "helloDefault" such that if no name is given it will return
 // 'Hello, world!'
 // Otherwise it behaves the same as the "hello" function.
-function helloDefault(){
-    if (name = false ){
-        return 'Hello, world'
-    }else hello()
+function helloDefault(name){
+    if (name){
+        return 'Hello, ' + name + '!'
+    }else 
+        return 'Hello, world!'
 }
